@@ -18,28 +18,10 @@ cd mcp-haystack
 pip install -e .
 ```
 
-## Quick Start
-
-```python
-from haystack_integrations.components.tools.mcp import MCPTool, HttpMCPServerInfo
-
-# Create an MCP tool that connects to an HTTP server
-server_info = HttpMCPServerInfo(base_url="http://localhost:8000")
-tool = MCPTool(name="my_tool", server_info=server_info)
-
-# Use the tool
-result = tool.invoke(param1="value1", param2="value2")
-```
 
 ## Docker
 
-This repository includes a Dockerfile that sets up a complete environment with:
-- Python 3.10
-- haystack-ai
-- MCP Haystack integration
-- Jupyter Notebook
-- Node.js
-- Rijksmuseum MCP server
+This repository includes a Dockerfile that sets up a complete environment with an MCP Server Demo.
 
 ### Building the Docker Image
 
