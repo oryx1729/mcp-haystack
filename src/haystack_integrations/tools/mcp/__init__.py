@@ -1,7 +1,7 @@
 from .connection import (
     MCPServer,
-    StdioMCPServerInfo,
-    HttpMCPServerInfo,
+    StdioServerInfo,
+    # HttpMCPServerInfo,
     MCPError,
     MCPConnectionError,
     MCPToolNotFoundError,
@@ -11,8 +11,8 @@ from .connection import (
 
 __all__ = [
     "MCPServer",
-    "StdioMCPServerInfo",
-    "HttpMCPServerInfo",
+    "StdioServerInfo",
+    # "HttpMCPServerInfo",
     "MCPError",
     "MCPConnectionError", 
     "MCPToolNotFoundError",
